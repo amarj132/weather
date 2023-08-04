@@ -37,18 +37,21 @@ function App() {
         <h1 className="absolute font-bold text-3xl  text-cyan-300">
           WEATHER APP{" "}
         </h1>
+        <form className="absolute mr-48" onSubmit={(e) => {e.preventDefault()}}>
         <input
-          className="absolute mt-16 pl-2 rounded-md w-52 border border-none"
+          className="absolute mt-8 pl-2  rounded-md w-52 border border-none"
           type="text"
           value={cityName}
           onChange={handleChangeInput}
         />
         <button
-          className="absolute p-2 mt-36 rounded-md bg-green-300"
+          className="absolute p-2 mt-16 ml-16 rounded-md bg-green-300"
           onClick={handleSearch}
         >
           Search{" "}
         </button>
+        </form>
+        
         <img
           className="w-full h-[400px]"
           alt="weather img"
